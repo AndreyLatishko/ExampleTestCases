@@ -1,16 +1,16 @@
 package com.tests.api;
 
-public class UserData {
+public class User {
     private Integer id;
     private String email;
     private String first_name;
     private String last_name;
     private String avatar;
 
-    public UserData() {
+    public User() {
     }
 
-    public UserData(Integer id, String email, String first_name, String last_name, String avatar) {
+    public User(Integer id, String email, String first_name, String last_name, String avatar) {
         this.id = id;
         this.email = email;
         this.first_name = first_name;

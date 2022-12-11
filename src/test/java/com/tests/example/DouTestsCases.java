@@ -135,7 +135,7 @@ public class DouTestsCases extends BaseSelenideTest {
     @Order(7)
     public void evaluationProvideCompany(){
         mainPage.getCharacterJob().click();
-        jobPage.getVacancyCompany(getTestCompanyTitle()).click();
+        jobPage.getVacancyCompany(TEST_USER_COMPANYTITLE).click();
         int value = parseInt((companyPage.getEvaluationCompany().text().replaceAll("\\D+", "")))/1000;
         assertNotNull(value);
         assertTrue(value < 100 && value > 0);

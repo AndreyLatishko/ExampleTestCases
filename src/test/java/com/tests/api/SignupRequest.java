@@ -1,10 +1,10 @@
 package com.tests.api;
 
-public class Register {
+public class SignupRequest {
     private String email;
     private String password;
 
-    public Register(String email, String password) {
+    public SignupRequest(String email, String password) {
         this.email = email;
         this.password = password;
     }

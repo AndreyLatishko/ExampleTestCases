@@ -8,16 +8,16 @@ import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 
 public class ApiSpecifications {
-    public static RequestSpecification requestSpecification(String url){
+    public static RequestSpecification requestSpecification(){
         return  new RequestSpecBuilder()
-                .setBaseUri(url)
+                .setBaseUri("https://reqres.in/")
                 .setContentType(ContentType.JSON)
                 .build();
     }
 
     public static ResponseSpecification responseSpecification(int status){
         return  new ResponseSpecBuilder()
-                .expectStatusCode(Integer.parseInt(String.format("%s",status)))
+                .expectStatusCode(status)
                 .build();
     }
 

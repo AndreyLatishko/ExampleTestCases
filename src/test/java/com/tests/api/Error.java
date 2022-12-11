@@ -1,12 +1,12 @@
 package com.tests.api;
 
-public class UnSuccessRegister {
+public class Error {
     private String error;
 
-    public UnSuccessRegister() {
+    public Error() {
     }
 
-    public UnSuccessRegister(String error) {
+    public Error(String error) {
         this.error = error;
     }
 

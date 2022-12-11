@@ -1,16 +1,16 @@
 package com.tests.api;
 
-public class SuccessRegister {
+public class SuccessSignupResponse {
     private Integer id;
     private String token;
 
 
-    public SuccessRegister(Integer id, String token) {
+    public SuccessSignupResponse(Integer id, String token) {
         this.id = id;
         this.token = token;
     }
 
-    public SuccessRegister() {
+    public SuccessSignupResponse() {
     }
 
     public Integer getId() {
