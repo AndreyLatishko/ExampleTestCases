@@ -5,6 +5,7 @@ import com.tests.base.BaseSelenideTest;
 import com.tests.helpers.Authorisation;
 import com.tests.page.*;
 import io.qameta.allure.Description;
+import org.aspectj.lang.annotation.Before;
 import org.junit.jupiter.api.*;
 
 import java.util.ArrayList;
@@ -140,8 +141,4 @@ public class DouTestsCases extends BaseSelenideTest {
         assertNotNull(value);
         assertTrue(value < 100 && value > 0);
     }
-
-
-
-
 }
