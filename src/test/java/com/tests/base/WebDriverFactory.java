@@ -7,7 +7,7 @@ import javax.annotation.ParametersAreNonnullByDefault;
 
 @ParametersAreNonnullByDefault
 public class WebDriverFactory{
-    private static WebDriverManager driverManager;
+
     public static WebDriverManager setUP(String name) {
         switch (name){
             case "chrome":
@@ -20,7 +20,6 @@ public class WebDriverFactory{
                 WebDriverManager.operadriver().setup();
                 Configuration.browser = "opera";
                 Configuration.browserSize = "390x844";
-                // browserSize for Iphone12Pro
                 Configuration.timeout = 10;
                 break;
             default:

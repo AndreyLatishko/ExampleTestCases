@@ -1,11 +1,10 @@
-package com.tests.example;
+package com.tests.api;
 
 import com.tests.api.SignupRequest;
 import com.tests.api.SuccessSignupResponse;
 import com.tests.api.Error;
 import com.tests.api.User;
-import com.tests.helpers.ApiSpecifications;
-import io.restassured.RestAssured;
+import com.tests.api.ApiSpecifications;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

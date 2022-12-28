@@ -1,4 +1,4 @@
-package com.tests.helpers;
+package com.tests.api;
 
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
